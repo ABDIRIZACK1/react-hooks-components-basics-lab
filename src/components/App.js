@@ -1,32 +1,10 @@
-import React from "react";
-
-function NavBar() {
+function About({ image = "https://via.placeholder.com/215", about }) {
   return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
+    <aside>
+      <img src={image} alt="blog logo" />
+      <p>{about}</p>
+    </aside>
   );
 }
 
-function Home() {
-  return (
-    <div id="home">
-      <h1>Home</h1>
-    </div>
-  );
-}
-
-{/* write an <About> component here */}
-
-
-function App() {
-  return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
-    </div>
-  );
-}
-
-export default App;
+export default About;
